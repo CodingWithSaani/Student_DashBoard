@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RL"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"
+        android:alpha=".4"/>
+
+    <ImageView
+        android:onClick="showMeYouThenWhyOkay"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/avatarIV"
+        android:src="@drawable/human_avatar"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTV"
+        android:text="General (R) M. RASHID"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/avatarIV"
+        android:layout_centerInParent="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/innerRLOne"
+        android:layout_below="@id/nameTV"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/optionOneIV"
+            android:src="@drawable/ic_call"
+            android:background="@drawable/iv_background"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/optionTwoIV"
+            android:src="@drawable/ic_message"
+            android:layout_toRightOf="@id/optionOneIV"
+            android:background="@drawable/iv_background"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/innerRLTwo"
+        android:layout_below="@id/innerRLOne"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/optionThreeIV"
+            android:src="@drawable/ic_email"
+            android:background="@drawable/iv_background"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/optionFourIV"
+            android:src="@drawable/ic_bomb"
+            android:layout_toRightOf="@id/optionThreeIV"
+            android:background="@drawable/iv_background"
+            />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoBtn"
+        android:layout_below="@id/innerRLTwo"
+        android:text="INFO"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:onClick="showMeYouThenWhyOkay"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_wave"
+        android:id="@+id/svgIV"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>
